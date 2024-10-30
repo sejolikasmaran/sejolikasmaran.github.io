@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <title>Syarat dan Ketentuan - Sejoli Kasmaran</title>
+    <title>Sejoli Kasmaran</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -9,7 +9,7 @@
     />
     <meta
       name="description"
-      content="Syarat dan Ketentuan Penggunaan Sejoli Kasmaran"
+      content="Timeline kehamilan dan pemeriksaan yang direkomendasikan."
     />
     <meta name="author" content="sejolikasmaran.com" />
     <link
@@ -23,6 +23,80 @@
     <link rel="stylesheet" href="assets/css/slick.css?v=2.0" />
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/tailwind-built.css?v=2.0" />
+    <style>
+      .timeline {
+        border-left: 3px solid #727cf5;
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+        background: rgba(114, 124, 245, 0.09);
+        margin: 0 auto;
+        letter-spacing: 0.2px;
+        position: relative;
+        line-height: 1.6em; /* Adjusted for better readability */
+        font-size: 1.03em;
+        padding: 50px;
+        list-style: none;
+        text-align: left;
+        max-width: 60%;
+      }
+
+      .timeline h3 {
+        font-weight: 600;
+        font-size: 1.4rem;
+        margin-bottom: 15px; /* Increased spacing for better separation */
+        margin-top: 20px; /* Added space above the heading */
+      }
+
+      .timeline .event {
+        border-bottom: 1px dashed #e8ebf1;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        position: relative;
+      }
+
+      .timeline .event:last-of-type {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border: none;
+      }
+
+      .timeline .event:before {
+        position: absolute;
+        left: -207px;
+        content: attr(data-date);
+        text-align: right;
+        font-weight: 100;
+        font-size: 0.9em;
+        min-width: 120px;
+      }
+
+      .timeline .event:after {
+        -webkit-box-shadow: 0 0 0 3px #727cf5;
+        box-shadow: 0 0 0 3px #727cf5;
+        left: -55.8px;
+        background: #fff;
+        border-radius: 50%;
+        height: 9px;
+        width: 9px;
+        content: "";
+        top: 5px;
+      }
+
+      .task-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .task-list li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .task-list input {
+        margin-right: 10px;
+      }
+    </style>
   </head>
   <body class="bg-white text-body font-body">
     <div class="main">
@@ -213,209 +287,250 @@
           </div>
         </nav>
       </div>
-      <!--Syarat dan Ketentuan-->
+
+      <!-- Trimester Timeline Goals Section -->
       <section class="py-40">
         <div class="container">
-          <h1
-            class="text-2xl lg:text-4xl font-bold mb-5 wow animate__animated animate__fadeInUp animated"
-          >
-            Syarat dan Ketentuan Penggunaan Sejoli Kasmaran
-          </h1>
-          <p class="mb-12">
-            Selamat datang di Sejoli Kasmaran! Dengan mengakses dan menggunakan
-            situs web kami, Anda menyetujui syarat dan ketentuan berikut ini.
-            Mohon untuk membaca dengan seksama. Jika Anda tidak setuju dengan
-            syarat dan ketentuan ini, kami menyarankan untuk tidak menggunakan
-            layanan kami.
-          </p>
+          <h1 class="text-2xl lg:text-4xl font-bold mb-5">Jurnal Kehamilan</h1>
 
-          <h2
-            class="text-xl lg:text-2xl font-bold mb-5 wow animate__animated animate__fadeInUp animated"
-          >
-            Daftar Isi
-          </h2>
-          <ol class="list-decimal pl-8 mb-12">
-            <li>
-              <a href="#definisi" class="text-blue-500 hover:underline"
-                >1. Definisi</a
-              >
+          <ul class="timeline">
+            <!-- Trimester 1 -->
+            <li class="event" data-date="TRIMESTER 1">
+              <h3>Kunjungan yang Direkomendasikan:</h3>
+              <ul class="task-list">
+                <li>
+                  <input type="checkbox" id="task1-trimester1" />
+                  <label for="task1-trimester1"
+                    >Bidan: 1 kali, sebaiknya pada minggu ke-6 hingga
+                    ke-8.</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="task2-trimester1" />
+                  <label for="task2-trimester1"
+                    >Dokter: 1 kali, sebaiknya pada minggu ke-8 hingga
+                    ke-12.</label
+                  >
+                </li>
+              </ul>
+
+              <h3>Fokus Pemeriksaan:</h3>
+              <p>
+                Di trimester pertama, pemeriksaan bertujuan untuk memastikan
+                bahwa ibu benar-benar hamil dan mengetahui usia kehamilan dengan
+                tepat. Selain itu, dokter atau bidan akan memeriksa apakah ada
+                risiko atau masalah kesehatan yang bisa muncul di awal
+                kehamilan. Ibu juga akan diberi informasi dasar tentang makanan
+                sehat, olahraga yang aman, dan gaya hidup yang baik untuk
+                mendukung kehamilan.
+              </p>
+
+              <h3>Pemeriksaan oleh Bidan:</h3>
+              <ul class="task-list">
+                <li>
+                  <input type="checkbox" id="task1-bidan-trimester1" />
+                  <label for="task1-bidan-trimester1"
+                    >Pemeriksaan Laboratorium: Darah (Golongan darah, Gula
+                    darah, Hematokrit, Skrining hepatitis, HIV).</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="task2-bidan-trimester1" />
+                  <label for="task2-bidan-trimester1"
+                    >Pemeriksaan Urine: PP Test, Reduksi, Protein.</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="task3-bidan-trimester1" />
+                  <label for="task3-bidan-trimester1"
+                    >Tanda-Tanda Vital (TTV): Tekanan darah, nadi, suhu, dan
+                    pernapasan.</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="task4-bidan-trimester1" />
+                  <label for="task4-bidan-trimester1">Imunisasi TT.</label>
+                </li>
+              </ul>
+
+              <h3>Pemeriksaan oleh Dokter:</h3>
+              <ul class="task-list">
+                <li>
+                  <input type="checkbox" id="task1-dokter-trimester1" />
+                  <label for="task1-dokter-trimester1"
+                    >Pemeriksaan Laboratorium: Toksoplasma, pemeriksaan serupa
+                    seperti di bidan.</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="task2-dokter-trimester1" />
+                  <label for="task2-dokter-trimester1"
+                    >Pemeriksaan USG: Konfirmasi kantung kehamilan, denyut
+                    jantung janin, usia kehamilan, NT Scan.</label
+                  >
+                </li>
+              </ul>
             </li>
-            <li>
-              <a href="#akun-pengguna" class="text-blue-500 hover:underline"
-                >2. Akun Pengguna</a
-              >
+
+            <!-- Trimester 2 -->
+            <li class="event" data-date="TRIMESTER 2  ">
+              <h3>Kunjungan yang Direkomendasikan:</h3>
+              <ul class="task-list">
+                <li>
+                  <input type="checkbox" id="task1-trimester2" />
+                  <label for="task1-trimester2"
+                    >Dokter: Minimal 1 kali, sebaiknya pada minggu ke-15 s.d
+                    18.</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="task2-trimester2" />
+                  <label for="task2-trimester2"
+                    >Bidan: Minimal 1 kali, sebaiknya pada minggu ke-19 s.d
+                    27.</label
+                  >
+                </li>
+              </ul>
+
+              <h3>Fokus Pemeriksaan:</h3>
+              <p>
+                Pada trimester kedua, pemeriksaan akan memastikan bahwa bayi
+                tumbuh dengan baik sesuai usianya. Dokter atau bidan juga akan
+                memeriksa apakah ada masalah seperti diabetes selama hamil atau
+                tekanan darah tinggi (preeklamsia). Ibu juga akan mendapatkan
+                informasi tentang perubahan tubuh yang terjadi dan persiapan
+                untuk menyusui setelah bayi lahir.
+              </p>
+
+              <h3>Pemeriksaan oleh Bidan:</h3>
+              <ul class="task-list">
+                <li>
+                  <input type="checkbox" id="task1-bidan-trimester2" />
+                  <label for="task1-bidan-trimester2"
+                    >Pemeriksaan darah (Hemoglobin), urine (Reduksi, Protein),
+                    dan TTV.</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="task2-bidan-trimester2" />
+                  <label for="task2-bidan-trimester2"
+                    >Pemeriksaan tinggi fundus uteri, denyut jantung
+                    janin.</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="task3-bidan-trimester2" />
+                  <label for="task3-bidan-trimester2"
+                    >Deteksi dini preeklamsia, diabetes gestasional,
+                    anemia.</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="task4-bidan-trimester2" />
+                  <label for="task4-bidan-trimester2"
+                    >Imunisasi TT ulangan.</label
+                  >
+                </li>
+              </ul>
+
+              <h3>Pemeriksaan oleh Dokter:</h3>
+              <ul class="task-list">
+                <li>
+                  <input type="checkbox" id="task1-dokter-trimester2" />
+                  <label for="task1-dokter-trimester2"
+                    >USG untuk memeriksa perkembangan organ janin dan posisi
+                    plasenta.</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="task2-dokter-trimester2" />
+                  <label for="task2-dokter-trimester2"
+                    >Mengetahui jenis kelamin bayi melalui USG setelah minggu
+                    ke-16.</label
+                  >
+                </li>
+              </ul>
             </li>
-            <li>
-              <a
-                href="#penggunaan-layanan"
-                class="text-blue-500 hover:underline"
-                >3. Penggunaan Layanan</a
-              >
+
+            <!-- Trimester 3 -->
+            <li class="event" data-date="TRIMESTER 3">
+              <h3>Kunjungan yang Direkomendasikan:</h3>
+              <ul class="task-list">
+                <li>
+                  <input type="checkbox" id="task1-trimester3" />
+                  <label for="task1-trimester3"
+                    >Bidan: Minimal 3 kali, mulai minggu ke-28.</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="task2-trimester3" />
+                  <label for="task2-trimester3"
+                    >Dokter: Minimal 1 kali, pada minggu ke-36.</label
+                  >
+                </li>
+              </ul>
+
+              <h3>Fokus Pemeriksaan:</h3>
+              <p>
+                Di trimester ketiga, pemeriksaan lebih sering dilakukan untuk
+                memastikan bayi tumbuh dengan sehat dan ibu tetap dalam kondisi
+                baik. Selain itu, persiapan untuk melahirkan akan dibahas,
+                termasuk apa yang perlu dilakukan saat persalinan dan bagaimana
+                merawat bayi setelah lahir.
+              </p>
+
+              <h3>Pemeriksaan oleh Bidan:</h3>
+              <ul class="task-list">
+                <li>
+                  <input type="checkbox" id="task1-bidan-trimester3" />
+                  <label for="task1-bidan-trimester3"
+                    >Pemeriksaan darah (Hemoglobin), urine (Reduksi, Protein),
+                    dan TTV.</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="task2-bidan-trimester3" />
+                  <label for="task2-bidan-trimester3"
+                    >Pemeriksaan tinggi fundus uteri, posisi janin.</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="task3-bidan-trimester3" />
+                  <label for="task3-bidan-trimester3"
+                    >Deteksi dini preeklamsia, diabetes gestasional, dan
+                    anemia.</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="task4-bidan-trimester3" />
+                  <label for="task4-bidan-trimester3"
+                    >Persiapan persalinan.</label
+                  >
+                </li>
+              </ul>
+
+              <h3>Pemeriksaan oleh Dokter:</h3>
+              <ul class="task-list">
+                <li>
+                  <input type="checkbox" id="task1-dokter-trimester3" />
+                  <label for="task1-dokter-trimester3"
+                    >USG untuk memantau fungsi plasenta dan tumbuh kembang
+                    janin.</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="task2-dokter-trimester3" />
+                  <label for="task2-dokter-trimester3"
+                    >Non-stress test jika ada indikasi.</label
+                  >
+                </li>
+              </ul>
             </li>
-            <li>
-              <a
-                href="#konten-dari-pengguna"
-                class="text-blue-500 hover:underline"
-                >4. Konten yang Disediakan Pengguna</a
-              >
-            </li>
-            <li>
-              <a href="#privasi" class="text-blue-500 hover:underline"
-                >5. Privasi dan Penggunaan Data</a
-              >
-            </li>
-            <li>
-              <a
-                href="#kekayaan-intelektual"
-                class="text-blue-500 hover:underline"
-                >6. Hak Kekayaan Intelektual</a
-              >
-            </li>
-            <li>
-              <a
-                href="#tanggung-jawab-pengguna"
-                class="text-blue-500 hover:underline"
-                >7. Tanggung Jawab Pengguna</a
-              >
-            </li>
-            <li>
-              <a
-                href="#pembatasan-tanggung-jawab"
-                class="text-blue-500 hover:underline"
-                >8. Pembatasan Tanggung Jawab</a
-              >
-            </li>
-            <li>
-              <a href="#perubahan-syarat" class="text-blue-500 hover:underline"
-                >9. Perubahan pada Syarat dan Ketentuan</a
-              >
-            </li>
-          </ol>
-
-          <h2
-            id="definisi"
-            class="text-xl lg:text-2xl font-bold mb-5 wow animate__animated animate__fadeInUp animated"
-          >
-            1. Definisi
-          </h2>
-          <p class="mb-12">
-            Sejoli Kasmaran adalah platform daring yang menyediakan layanan
-            edukasi, konsultasi bidan, dan alat bantu kehamilan bagi calon orang
-            tua. Pengguna adalah setiap individu yang mengakses dan/atau
-            menggunakan layanan yang tersedia di Sejoli Kasmaran. Konten merujuk
-            pada semua informasi, artikel, kalkulator, video, gambar, teks,
-            grafik, dan materi lain yang ada di platform Sejoli Kasmaran.
-          </p>
-
-          <h3
-            id="akun-pengguna"
-            class="text-lg lg:text-xl font-bold mb-5 wow animate__animated animate__fadeInUp animated"
-          >
-            2. Akun Pengguna
-          </h3>
-          <p class="mb-12">
-            Untuk menggunakan layanan kami, Anda harus membuat akun dengan
-            informasi yang benar, lengkap, dan terbaru. Anda juga bertanggung
-            jawab atas aktivitas yang dilakukan melalui akun Anda. Sejoli
-            Kasmaran berhak menolak pendaftaran akun atau menutup akun yang
-            melanggar ketentuan ini.
-          </p>
-
-          <h3
-            id="penggunaan-layanan"
-            class="text-lg lg:text-xl font-bold mb-5 wow animate__animated animate__fadeInUp animated"
-          >
-            3. Penggunaan Layanan
-          </h3>
-          <p class="mb-12">
-            Layanan yang disediakan oleh Sejoli Kasmaran bersifat edukatif dan
-            informatif. Informasi yang terdapat di platform ini tidak
-            dimaksudkan sebagai pengganti nasihat medis profesional.
-          </p>
-
-          <h3
-            id="konten-dari-pengguna"
-            class="text-lg lg:text-xl font-bold mb-5 wow animate__animated animate__fadeInUp animated"
-          >
-            4. Konten yang Disediakan Pengguna
-          </h3>
-          <p class="mb-12">
-            Pengguna dapat berkontribusi melalui fitur tertentu seperti jurnal
-            pribadi. Dalam hal ini, pengguna harus memastikan bahwa konten yang
-            dibagikan tidak melanggar hak cipta, merek dagang, privasi, atau
-            hak-hak pihak ketiga lainnya.
-          </p>
-
-          <h3
-            id="privasi"
-            class="text-lg lg:text-xl font-bold mb-5 wow animate__animated animate__fadeInUp animated"
-          >
-            5. Privasi dan Penggunaan Data
-          </h3>
-          <p class="mb-12">
-            Kami sangat menghargai privasi pengguna. Informasi pribadi yang Anda
-            berikan akan kami kelola sesuai dengan Kebijakan Privasi kami, yang
-            menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi
-            data Anda.
-          </p>
-
-          <h3
-            id="kekayaan-intelektual"
-            class="text-lg lg:text-xl font-bold mb-5 wow animate__animated animate__fadeInUp animated"
-          >
-            6. Hak Kekayaan Intelektual
-          </h3>
-          <p class="mb-12">
-            Seluruh konten, desain, logo, dan materi yang terdapat di Sejoli
-            Kasmaran dilindungi oleh undang-undang hak cipta dan kekayaan
-            intelektual yang berlaku di Indonesia. Anda tidak diperkenankan
-            untuk menyalin, menggunakan, atau memodifikasi konten kami tanpa
-            izin tertulis dari kami.
-          </p>
-
-          <h3
-            id="tanggung-jawab-pengguna"
-            class="text-lg lg:text-xl font-bold mb-5 wow animate__animated animate__fadeInUp animated"
-          >
-            7. Tanggung Jawab Pengguna
-          </h3>
-          <p class="mb-12">
-            Pengguna setuju untuk menggunakan situs web dan layanan Sejoli
-            Kasmaran hanya untuk tujuan yang sah dan tidak melanggar hukum.
-            Pengguna juga setuju untuk tidak mencoba meretas, merusak, atau
-            mendapatkan akses tidak sah ke situs web atau sistem Sejoli
-            Kasmaran.
-          </p>
-
-          <h3
-            id="pembatasan-tanggung-jawab"
-            class="text-lg lg:text-xl font-bold mb-5 wow animate__animated animate__fadeInUp animated"
-          >
-            8. Pembatasan Tanggung Jawab
-          </h3>
-          <p class="mb-12">
-            Sejoli Kasmaran tidak bertanggung jawab atas kerusakan atau kerugian
-            yang timbul akibat penggunaan atau ketidakmampuan menggunakan
-            layanan kami. Kami juga tidak bertanggung jawab atas ketidakakuratan
-            atau kelalaian dalam informasi yang disediakan di platform.
-          </p>
-
-          <h3
-            id="perubahan-syarat"
-            class="text-lg lg:text-xl font-bold mb-5 wow animate__animated animate__fadeInUp animated"
-          >
-            9. Perubahan pada Syarat dan Ketentuan
-          </h3>
-          <p class="mb-12">
-            Kami berhak untuk mengubah syarat dan ketentuan ini kapan saja.
-            Perubahan akan diberitahukan melalui situs web kami. Penggunaan
-            layanan secara berkelanjutan setelah perubahan menandakan
-            persetujuan Anda atas syarat dan ketentuan yang diperbarui.
-          </p>
+          </ul>
         </div>
       </section>
 
-      <!--Footer 2-->
+      <!--Footer-->
       <section class="relative footer-2 border-t border-gray-100">
         <div
           class="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-blueGray-50"
@@ -433,7 +548,7 @@
                 <img
                   class="h-10"
                   src="assets/imgs/logos/sejoli-kasmaran-horizontal.svg"
-                  alt=""
+                  alt="Sejoli Kasmaran"
                 />
               </a>
               <div class="mt-12 mb-16">
@@ -483,18 +598,24 @@
                 data-wow-delay=".5s"
               >
                 <p class="text-xs text-blueGray-400">
-                  &copy; 2024. Sejoli Kasmaran .All rights reserved.
+                  &copy; 2024. Sejoli Kasmaran. All rights reserved.
                 </p>
                 <div class="-mx-2 mt-4">
-                  <a class="inline-block px-2" href="#">
-                    <img src="assets/imgs/icons/facebook-blue.svg" alt="" />
-                  </a>
-                  <a class="inline-block px-2" href="#">
-                    <img src="assets/imgs/icons/twitter-blue.svg" alt="" />
-                  </a>
-                  <a class="inline-block px-2" href="#">
-                    <img src="assets/imgs/icons/instagram-blue.svg" alt="" />
-                  </a>
+                  <a class="inline-block px-2" href="#"
+                    ><img
+                      src="assets/imgs/icons/facebook-blue.svg"
+                      alt="Facebook"
+                  /></a>
+                  <a class="inline-block px-2" href="#"
+                    ><img
+                      src="assets/imgs/icons/twitter-blue.svg"
+                      alt="Twitter"
+                  /></a>
+                  <a class="inline-block px-2" href="#"
+                    ><img
+                      src="assets/imgs/icons/instagram-blue.svg"
+                      alt="Instagram"
+                  /></a>
                 </div>
               </div>
             </div>
@@ -523,7 +644,7 @@
                     <li>
                       <a
                         class="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href=""
+                        href="services.html"
                         >Layanan</a
                       >
                     </li>
@@ -635,15 +756,21 @@
                   &copy; 2024. Sejoli Kasmaran. All rights reserved.
                 </p>
                 <div class="-mx-2 mt-4">
-                  <a class="inline-block px-2" href="#">
-                    <img src="assets/imgs/icons/facebook-blue.svg" alt="" />
-                  </a>
-                  <a class="inline-block px-2" href="#">
-                    <img src="assets/imgs/icons/twitter-blue.svg" alt="" />
-                  </a>
-                  <a class="inline-block px-2" href="#">
-                    <img src="assets/imgs/icons/instagram-blue.svg" alt="" />
-                  </a>
+                  <a class="inline-block px-2" href="#"
+                    ><img
+                      src="assets/imgs/icons/facebook-blue.svg"
+                      alt="Facebook"
+                  /></a>
+                  <a class="inline-block px-2" href="#"
+                    ><img
+                      src="assets/imgs/icons/twitter-blue.svg"
+                      alt="Twitter"
+                  /></a>
+                  <a class="inline-block px-2" href="#"
+                    ><img
+                      src="assets/imgs/icons/instagram-blue.svg"
+                      alt="Instagram"
+                  /></a>
                 </div>
               </div>
             </div>
