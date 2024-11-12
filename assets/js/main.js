@@ -233,22 +233,22 @@ document.addEventListener("DOMContentLoaded", function () {
   let explanation = "";
 
   if (score <= 2) {
-    status = "KRR (Kehamilan Risiko Rendah)";
+    status = "Kehamilan yang Sehat";
     explanation = `
-                <p class="mb-4">Status Kehamilan: <span class="font-bold text-green-600">KRR (Kehamilan Risiko Rendah)</span></p>
-                <p>Kehamilan Anda termasuk risiko rendah. Anda dapat melahirkan di Poliklinik Desa (POLINDES) dengan bantuan bidan, tanpa perlu rujukan khusus.</p>
+                <p class="mb-4">Status Kehamilan: <span class="font-bold text-green-600">Kehamilan yang Sehat</span></p>
+                <p>Selamat, kehamilan Anda dalam kondisi baik. Anda dapat merencanakan persalinan di Poliklinik Desa (POLINDES) dengan pendampingan bidan kami. Tidak diperlukan rujukan khusus, dan kami siap membantu Anda menjalani proses persalinan dengan tenang dan nyaman.</p>
             `;
   } else if (score >= 3 && score <= 11) {
-    status = "KRT (Kehamilan Risiko Tinggi)";
+    status = "Kehamilan dengan Perhatian Lebih";
     explanation = `
-                <p class="mb-4">Status Kehamilan: <span class="font-bold text-yellow-600">KRT (Kehamilan Risiko Tinggi)</span></p>
-                <p>Kehamilan Anda tergolong risiko tinggi. Anda perlu dirujuk ke Puskesmas atau Rumah Sakit, dan persalinan akan ditangani oleh bidan serta dokter. Rujukan berdasarkan risiko diperlukan.</p>
+                <p class="mb-4">Status Kehamilan: <span class="font-bold text-yellow-600">Kehamilan dengan Perhatian Lebih</span></p>
+                <p>Kehamilan Anda memerlukan perhatian lebih. Kami menyarankan Anda untuk menjalani persalinan di fasilitas kesehatan yang lebih lengkap seperti Puskesmas atau Rumah Sakit. Di sana, bidan dan dokter akan mendampingi serta memastikan semua kebutuhan persalinan Anda terpenuhi dengan baik.</p>
             `;
   } else {
-    status = "KRST (Kehamilan Risiko Sangat Tinggi)";
+    status = "KRST (Kehamilan dengan Penanganan Intensif)";
     explanation = `
-                <p class="mb-4">Status Kehamilan: <span class="font-bold text-red-600">KRST (Kehamilan Risiko Sangat Tinggi)</span></p>
-                <p>Kehamilan Anda memiliki risiko sangat tinggi. Anda perlu segera dirujuk ke Rumah Sakit, dan persalinan harus ditangani oleh dokter. Penanganan di Rumah Sakit sangat penting untuk memastikan keselamatan Anda dan bayi Anda.</p>
+                <p class="mb-4">Status Kehamilan: <span class="font-bold text-red-600">Kehamilan dengan Penanganan Intensif</span></p>
+                <p>Kehamilan Anda membutuhkan penanganan intensif. Kami menyarankan agar Anda segera mendapatkan pelayanan di fasilitas kesehatan, di mana dokter dan tenaga medis siap mendampingi proses persalinan Anda. Kami berkomitmen untuk memberikan dukungan terbaik demi keselamatan Anda dan bayi Anda.</p>
             `;
   }
 
