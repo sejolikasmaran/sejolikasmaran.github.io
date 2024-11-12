@@ -9,6 +9,7 @@
     />
     <meta name="description" content="Tailwind CSS Saas Landing Page" />
     <meta name="author" content="alithemes.com" />
+
     <link
       rel="icon"
       type="image/png"
@@ -16,6 +17,10 @@
       href="assets/imgs/logos/sejoli-kasmaran-logo.svg"
     />
     <!-- Vendor CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/animate.min.css?v=2.0" />
     <link rel="stylesheet" href="assets/css/slick.css?v=2.0" />
     <!-- Template CSS -->
@@ -210,195 +215,67 @@
           </div>
         </nav>
       </div>
-      <section class="relative -mt-24 pt-24">
-        <div
-          class="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-blueGray-100 z-0"
-          style="z-index: -1"
-        ></div>
-        <div class="container">
-          <div class="flex flex-wrap items-center -mx-3">
-            <div class="w-full lg:w-1/2 px-3">
-              <div class="py-12">
-                <div
-                  class="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left"
-                >
-                  <h2
-                    class="text-3xl lg:text-4xl mb-4 font-bold font-heading wow animate__animatedanimated animate__fadeIn"
-                  >
-                    Kami <span class="text-blue-500">Berkomitmen</span> untuk
-                    Membantu, <br />Menemani Perjalanan Kehamilan Anda
-                  </h2>
-                  <p
-                    class="text-blueGray-400 leading-relaxed wow animate__animatedanimated animate__fadeIn"
-                  >
-                    Kami adalah
-                    <strong class="text-blue-500">Sejoli Kasmaran</strong>,
-                    Penyedia Layanan
-                    <span
-                      class="typewrite d-inline text-brand"
-                      data-period="3000"
-                      data-type='["Prenatal Yoga", "Konsultasi Bidan" ]'
-                    ></span>
-                  </p>
-                  <p
-                    class="text-blueGray-400 leading-relaxed wow animate__animatedanimated animate__fadeIn mt-3 text-sm"
-                  >
-                    Membantu Anda menjaga kesehatan dan mempersiapkan persalinan
-                  </p>
-                </div>
-                <div class="text-center lg:text-left">
-                  <a
-                    class="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded wow animate__animatedanimated animate__fadeInUp"
-                    href="#key-features"
-                    >Fitur Utama</a
-                  >
-                  <a
-                    class="block hover-up-2 sm:inline-block py-4 px-8 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded wow animate__animatedanimated animate__fadeInUp"
-                    data-wow-delay=".3s"
-                    href="#how-we-work"
-                    >Bagaimana Kami Bekerja?</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div
-              class="w-full lg:w-1/2 px-3 lg:bg-blueGray-10 mb-12 lg:mb-0 pb-10"
-            >
-              <div class="flex items-center justify-center">
-                <img
-                  class="lg:max-w-lg"
-                  src="assets/imgs/illustrations/team.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="py-20">
-        <div class="container">
-          <div class="max-w-2xl mx-auto text-center">
-            <div class="max-w-md mb-8 mx-auto">
-              <span
-                class="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl wow animate__animatedanimated animate__fadeInUp"
-                data-wow-delay=".1s"
-                >Hubungi Kami</span
-              >
-              <h2
-                class="mt-2 text-4xl font-bold font-heading wow animate__animatedanimated animate__fadeInUp"
-                data-wow-delay=".s"
-              >
-                Kami akan <span class="text-blue-500">senang</span> mendengar
-                dari Anda!
-              </h2>
-            </div>
-            <div>
-              <form>
-                <div
-                  class="mb-4 text-sm wow animate__animatedanimated animate__fadeInUp"
-                  data-wow-delay=".5s"
-                >
-                  <span class="mr-4 font-semibold">Bagian:</span>
-                  <label class="mr-4">
-                    <input
-                      class="mr-1"
-                      type="radio"
-                      name="department"
-                      value="1"
-                      checked=""
-                    />
-                    <span>Dukungan</span>
-                  </label>
-                  <label>
-                    <input
-                      class="mr-1"
-                      type="radio"
-                      name="department"
-                      value="2"
-                    />
-                    <span>Informasi Layanan</span>
-                  </label>
-                </div>
-                <div
-                  class="mb-4 wow animate__animatedanimated animate__fadeInUp"
-                  data-wow-delay=".3s"
-                >
-                  <input
-                    class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
-                    type="text"
-                    placeholder="Subjek"
-                  />
-                </div>
-                <div
-                  class="mb-4 wow animate__animatedanimated animate__fadeInUp"
-                  data-wow-delay=".3s"
-                >
-                  <input
-                    class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
-                    type="text"
-                    placeholder="Nama"
-                  />
-                </div>
-                <div
-                  class="mb-4 wow animate__animatedanimated animate__fadeInUp"
-                  data-wow-delay=".3s"
-                >
-                  <input
-                    class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
-                    type="email"
-                    placeholder="email@example.com"
-                  />
-                </div>
-                <div
-                  class="mb-4 wow animate__animatedanimated animate__fadeInUp"
-                  data-wow-delay=".3s"
-                >
-                  <textarea
-                    class="w-full h-24 p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none"
-                    placeholder="Pesan Anda..."
-                  ></textarea>
-                </div>
-                <div
-                  class="mb-4 wow animate__animatedanimated animate__fadeInUp"
-                  data-wow-delay=".3s"
-                >
-                  <label class="flex px-2 bg-blueGray-50 rounded">
-                    <input class="hidden" type="file" name="Choose file" />
-                    <span
-                      class="my-1 ml-auto px-4 py-3 text-xs text-white font-semibold leading-none bg-blueGray-500 hover:bg-blueGray-600 rounded cursor-pointer"
-                    >
-                      Pilih Berkas</span
-                    >
-                  </label>
-                </div>
-                <div
-                  class="flex justify-between items-center wow animate__animatedanimated animate__fadeInUp"
-                  data-wow-delay=".3s"
-                >
-                  <label>
-                    <input
-                      class="mr-1"
-                      type="checkbox"
-                      name="terms"
-                      value="1"
-                    />
-                    <span class="text-sm font-semibold"
-                      >Saya setuju dengan syarat dan ketentuan.</span
-                    >
-                  </label>
-                  <button
-                    class="py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded"
-                    type="submit"
-                  >
-                    Kirim
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
 
+      <main class="container pt-16">
+        <section id="bmi-calculator" class="container mx-auto px-4 py-8">
+          <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+            <!-- Gambar -->
+            <img
+              src="assets/imgs/helath-calculator-2.png"
+              alt="Deskripsi Gambar"
+              class="w-full rounded-lg object-cover"
+              style="aspect-ratio: 16/9"
+            />
+          </div>
+          <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-center text-gray-700 mb-6">
+              Kalkulator Indeks Massa Tubuh (IMT)
+            </h2>
+            <form id="bmi-form" class="space-y-6">
+              <div class="space-y-4">
+                <label for="preweight" class="block text-gray-600"
+                  >Berat Badan (kg):</label
+                >
+                <input
+                  type="number"
+                  id="preweight"
+                  required
+                  class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                />
+
+                <label for="height" class="block text-gray-600"
+                  >Tinggi Badan (cm):</label
+                >
+                <input
+                  type="number"
+                  id="height"
+                  required
+                  class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                />
+
+                <label for="trimester" class="block text-gray-600"
+                  >Trimester Kehamilan:</label
+                >
+                <select
+                  id="trimester"
+                  class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                >
+                  <option value="1">Trimester Pertama</option>
+                  <option value="2">Trimester Kedua</option>
+                  <option value="3">Trimester Ketiga</option>
+                </select>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-indigo-600 text-white p-3 rounded-md hover:bg-indigo-700"
+              >
+                Hitung IMT
+              </button>
+            </form>
+            <div id="bmi-result" class="mt-4"></div>
+          </div>
+        </section>
+      </main>
       <!--Footer 2-->
       <section class="relative footer-2 border-t border-gray-100">
         <div
@@ -507,7 +384,7 @@
                     <li>
                       <a
                         class="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href=""
+                        href="services.html"
                         >Layanan</a
                       >
                     </li>
@@ -529,57 +406,29 @@
                     <li>
                       <a
                         class="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="contact.html"
-                        >Kalkulator Prediksi Persalinan</a
+                        href="services.html"
+                        >Kelas Prenatal dengan Yoga & Relaksasi</a
                       >
                     </li>
                     <li>
                       <a
                         class="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="contact.html"
-                        >Skor Risiko Kehamilan</a
+                        href="portfolio.html"
+                        >Konsultasi Langsung dengan Bidan</a
                       >
                     </li>
                     <li>
                       <a
                         class="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="contact.html"
-                        >Kalkulator Indeks Masa Tubuh (IMT)</a
+                        href="pricing.html"
+                        >Pojok Pintar</a
                       >
                     </li>
                     <li>
                       <a
                         class="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="contact.html"
-                        >Live Chat</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="contact.html"
-                        >Jurnal Kehamilanku</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="contact.html"
-                        >Pojok Belajar</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="contact.html"
-                        >Komunitas Ibu Hamil</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="contact.html"
-                        >Kelas Yoga & Relaksasi Prenatal Online</a
+                        href="faqs.html"
+                        >Journal Kehamilan Interaktif</a
                       >
                     </li>
                   </ul>
@@ -635,16 +484,7 @@
         </div>
       </section>
     </div>
-    <!-- End .main -->
 
-    <!-- Preloader Start -->
-    <div id="preloader-active">
-      <div class="preloader flex-1 content-center">
-        <div class="logo absolute inset-y-2/4 jump">
-          <img src="assets/imgs/logos/sejoli-kasmaran-preloader.svg" alt="" />
-        </div>
-      </div>
-    </div>
     <!--Import Vendor Js-->
     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
@@ -657,5 +497,85 @@
     <script src="assets/js/vendor/textType.js"></script>
     <script src="assets/js/vendor/mobile-menu.js"></script>
     <script src="assets/js/main.js?v=2.0"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const bmiForm = document.querySelector("#bmi-form");
+
+        bmiForm.addEventListener("submit", (event) => {
+          event.preventDefault();
+
+          const preweight = parseFloat(
+            document.getElementById("preweight").value
+          );
+          const height =
+            parseFloat(document.getElementById("height").value) / 100; // Konversi ke meter
+          const trimester = document.getElementById("trimester").value;
+
+          const bmi = (preweight / (height * height)).toFixed(2);
+          let bmiCategory = "";
+          let message = "";
+          let emoji = "";
+
+          if (bmi < 18.5) {
+            bmiCategory =
+              "<span class='text-yellow-500 font-bold'>Kurus</span>";
+            emoji = "😟";
+
+            if (trimester === "1") {
+              message = `
+                Pada trimester pertama, penting bagi Anda untuk meningkatkan asupan kalori guna mendukung perkembangan janin. Konsumsi makanan kaya nutrisi. Jangan lupa minum air putih yang cukup agar tubuh tetap terhidrasi. ${emoji}
+                <br><br><strong>Tips Tambahan:</strong> Makan dalam porsi kecil tapi sering, dan tambahkan camilan bergizi di antara waktu makan utama seperti yogurt, kacang almond, atau smoothie buah segar. 🥑🍗
+              `;
+            } else if (trimester === "2") {
+              message = `
+                Pada trimester kedua, fokuskan pada penambahan berat badan yang stabil dengan mengonsumsi lebih banyak protein berkualitas. 🐟🥩 ${emoji}
+                <br><br><strong>Tips Tambahan:</strong> Tambahkan lemak sehat seperti minyak zaitun atau mentega almond dalam makanan utama.
+              `;
+            } else {
+              message = `
+                Pada trimester ketiga, janin akan mengalami pertumbuhan pesat, sehingga kebutuhan kalori meningkat lagi. Perbanyak makanan kaya zat besi dan vitamin C untuk mencegah anemia. ${emoji}
+                <br><br><strong>Tips Tambahan:</strong> Camilan yang kaya nutrisi seperti selai kacang di atas roti gandum atau buah segar dengan yogurt sangat disarankan. 🥙
+              `;
+            }
+          } else if (bmi < 24.9) {
+            bmiCategory =
+              "<span class='text-green-500 font-bold'>Normal</span>";
+            emoji = "😊";
+
+            message = `
+              Pada trimester ke-${trimester}, penting untuk menjaga pola makan yang seimbang. Fokus pada makanan kaya nutrisi seperti buah, sayuran, dan protein sehat. ${emoji}
+              <br><br><strong>Tips Tambahan:</strong> Lanjutkan pola makan sehat dan tetap aktif secara fisik dengan yoga prenatal atau berjalan santai.
+            `;
+          } else if (bmi < 29.9) {
+            bmiCategory =
+              "<span class='text-orange-500 font-bold'>Gemuk</span>";
+            emoji = "😐";
+
+            message = `
+              Jika Anda berada dalam kategori gemuk pada trimester ke-${trimester}, penting untuk menjaga kenaikan berat badan yang terkendali. Batasi asupan kalori dari makanan berlemak dan perbanyak konsumsi sayuran. ${emoji}
+              <br><br><strong>Tips Tambahan:</strong> Pertimbangkan untuk lebih aktif dengan berjalan kaki atau mengikuti kelas yoga prenatal.
+            `;
+          } else {
+            bmiCategory =
+              "<span class='text-red-500 font-bold'>Obesitas</span>";
+            emoji = "😟";
+
+            message = `
+              Pada trimester ke-${trimester}, sangat penting untuk memantau berat badan dan mengonsumsi makanan rendah kalori yang kaya nutrisi seperti sayuran dan protein tanpa lemak. ${emoji}
+              <br><br><strong>Tips Tambahan:</strong> Tetap aktif secara fisik dan konsultasikan dengan dokter untuk pengelolaan berat badan yang optimal.
+            `;
+          }
+
+          document.getElementById("bmi-result").innerHTML = `
+            <div class="mt-4">
+              <h3 class="text-xl font-bold text-indigo-600">Kategori IMT: ${bmiCategory}</h3>
+              <p>${message}</p>
+              <p>IMT Anda adalah: <span class="font-bold">${bmi}</span></p>
+            </div>
+          `;
+        });
+      });
+    </script>
   </body>
 </html>
